@@ -1,0 +1,76 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+  background: #101b29;
+  color: white;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.game-title {
+  flex-shrink: 0;
+  padding: 16px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background: #152638;
+}
+
+#game-canvas {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  touch-action: none;
+}
+
+#game-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.game-hint {
+  flex-shrink: 0;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #aab9c8;
+  background: #152638;
+}
+
+@media (max-width: 600px) {
+  .game-title {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .game-hint {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
